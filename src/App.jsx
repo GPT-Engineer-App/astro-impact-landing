@@ -8,10 +8,11 @@ import "./App.css";
 function App() {
   return (
     <>
-      <header className="bg-background py-8">
+      <header className="bg-primary py-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Open Asteroid Impact</h1>
-          <p className="text-lg mb-8">The future of astro mining is here</p>
+          <h1 className="text-4xl font-bold mb-4 text-primary-foreground">Open Asteroid Impact</h1>
+          <p className="text-lg mb-8 text-primary-foreground">The future of astro mining is here</p>
+          <img src="/hero-image.jpg" alt="Asteroid Mining" className="w-full rounded-lg shadow-lg mb-8" />
           <Button size="lg">Get Started</Button>
         </div>
       </header>
@@ -21,6 +22,7 @@ function App() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card>
             <CardHeader>
+              <img src="/advanced-tech.jpg" alt="Advanced Technology" className="w-full h-40 object-cover rounded-t-md" />
               <CardTitle>Advanced Technology</CardTitle>
             </CardHeader>
             <CardContent>
@@ -29,6 +31,7 @@ function App() {
           </Card>
           <Card>
             <CardHeader>
+              <img src="/experienced-team.jpg" alt="Experienced Team" className="w-full h-40 object-cover rounded-t-md" />
               <CardTitle>Experienced Team</CardTitle>
             </CardHeader>
             <CardContent>
@@ -37,6 +40,7 @@ function App() {
           </Card>
           <Card>
             <CardHeader>
+              <img src="/sustainable.jpg" alt="Sustainable Approach" className="w-full h-40 object-cover rounded-t-md" />
               <CardTitle>Sustainable Approach</CardTitle>
             </CardHeader>
             <CardContent>
@@ -53,7 +57,7 @@ function App() {
             <Card>
               <CardHeader>
                 <Avatar>
-                  <AvatarImage src="/elon-musk.jpg" />
+                  <AvatarImage src="/elon-musk.jpg" alt="Elon Musk" />
                   <AvatarFallback>EM</AvatarFallback>
                 </Avatar>
                 <div className="ml-4">
@@ -68,7 +72,7 @@ function App() {
             <Card>
               <CardHeader>
                 <Avatar>
-                  <AvatarImage src="/andrew-carnegie.jpg" />
+                  <AvatarImage src="/andrew-carnegie.jpg" alt="Andrew Carnegie" />
                   <AvatarFallback>AC</AvatarFallback>
                 </Avatar>
                 <div className="ml-4">
